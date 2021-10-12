@@ -9,18 +9,35 @@
 </head>
 <body>
         <div class="container">
-            <header>Currency Convertor</header>
-            <form action="#">
-                <div class="amount">
-                    <p>Enter Amount</p>
-                    <input type="text" value="1">
-                </div>
-                <div class="drop-list">
-                    <div class="from">
-                        <p>From</p>
-                        <div class="select-box">
-                            <img src="https://www.countryflags.io/us/flat/64.png" alt="flag">
+            <div class="card">
+                <header>Currency Convertor</header>
+                <form action="#">
+                    <div class="amount">
+                        <p>Enter Amount</p>
+                        <input type="text" value="1">
+                    </div>
+                    <div class="drop-list">
+                        <div class="from">
+                            <p>From</p>
+                            <div class="select-box">
+                                <img src="https://www.countryflags.io/us/flat/64.png" alt="flag">
+                            
+                            <select>
+                                <option value="USD">USD</option>
+                                <option value="NPR">NPR</option>
+                                <option value="IND">IND</option>
+                                <option value="PKR">PKR</option>
+                                <option value="MAD">MAD</option>
+                                <option value="TAKA">TAKA</option>
+                            </select>
                         </div>
+                    </div>
+            <div class="icon"><ion-icon name="swap-horizontal-outline"></ion-icon></div>
+                  <div class="to">
+                        <p>To</p>
+                    <div class="select-box">
+                            <img src="https://www.countryflags.io/bd/flat/64.png" alt="flag">
+                       
                         <select>
                             <option value="USD">USD</option>
                             <option value="NPR">NPR</option>
@@ -30,27 +47,13 @@
                             <option value="TAKA">TAKA</option>
                         </select>
                     </div>
-                </div>
-
-        <div class="icon"><ion-icon name="swap-horizontal-outline"></ion-icon></div>
-
-                <div class="to">
-                    <p>To</p>
-                    <div class="select-box">
-                        <img src="https://www.countryflags.io/bd/flat/64.png" alt="flag">
-                    </div>
-                    <select>
-                        <option value="USD">USD</option>
-                        <option value="NPR">NPR</option>
-                        <option value="IND">IND</option>
-                        <option value="PKR">PKR</option>
-                        <option value="MAD">MAD</option>
-                        <option value="TAKA">TAKA</option>
-                    </select>
-                </div>
+                 </div>
             </div>
+            <div class="exchange-rate">1 USD = 83.00 TAKA</div>
+            <button>Get Exchange</button>
             </form>
         </div>
+    </div>
 
 
 <!--JS -->
