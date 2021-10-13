@@ -1,12 +1,22 @@
-*
-{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #675AFE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background: #675AFE;
+}
+::selection{
+  color: #fff;
+  background: #675AFE;
 }
 .container
 {
@@ -21,85 +31,90 @@ body{
 .card{
     background-color: white;
     width: 400px;
-    height: 400px;
+    height: 450px;
     border-radius: 10px;
     padding: 30px;
 }
-.card header
-{
-    font-size: 28px;
-    font-weight: 600;
-    text-align: center;
+.card header{
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
 }
 .card form{
-    margin:20px 0 20px 0px;
+  margin: 40px 0 20px 0;
 }
 form :where(input, select, button){
-    width: 100%;
-    outline: none;
-    border: none;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
 }
 form p{
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 5px;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
-form input {
-    font-size: 18px;
-    padding: 0px 15px;
-    height: 50px;
-    border: 1px solid #999;
-    border-radius: 5px;
+form input{
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
 }
 form input:focus{
-    padding: 0 15px;
-    border: 2px solid #675AFE;
+  padding: 0 14px;
+  border: 2px solid #675AFE;
 }
 form .drop-list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 .drop-list .select-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    width: 115px;
-    border-radius: 5px;
-    border: 1px solid #999;
-}
-.select-box select{
-    width: auto;
-    font-size: 16px;
-    cursor: pointer;
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #999;
 }
 .select-box img{
-    max-width: 25px;
+  max-width: 25px;
+}
+.select-box select{
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+}
+.select-box select::-webkit-scrollbar{
+  width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+  background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
 }
 .drop-list .icon{
-    margin-top: 30px;
-    font-size: 22px;
-    cursor: pointer;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
 }
 form .exchange-rate{
-    font-size: 18px;
-    margin: 20px 0 30px;
-    opacity: 0.7;
+  font-size: 17px;
+  margin: 20px 0 30px;
 }
 form button{
-    height: 52px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #1A5276;
-    cursor: pointer;
-    border-radius: 5px;
-    text-transform: uppercase;
-    transition: all 0.24s ease-in-out;
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: #675AFE;
+  transition: 0.3s ease;
 }
 form button:hover{
-    color: #fff;
-    background-color: #675AFE;
-    transition: all 0.24s ease-in-out;
+  background: #4534fe;
 }
